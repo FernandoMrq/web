@@ -6,52 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
-        body {
-            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/92bb3a0b-7e91-40a0-b27b-f2c3ac9ef6e4/b21e3ad9-aa05-4122-b6a8-977eb91d5657/BR-pt-20210322-popsignuptwoweeks-perspective_alpha_website_small.jpg);
-            background-size: cover;
-            background-position: top center;
-        }
+        /* .section-one,
+        .section-two {
+            box-sizing: border-box;
+        } */
 
-        #heading {
-            background: rgba(0, 0, 0, 0.5)
-        }
-
-        #heading div {
-            width: 80%;
-            display: flex;
-            /* background: blue; */
-            justify-content: space-between;
-            margin: 0 auto;
-        }
-
-        #heading h1 {
-            padding: 15px 0px;
-            font-size: 20px;
-            text-transform: uppercase;
-        }
-
-        #heading a {
+        .section-one {
+            background-color: deeppink;
+            background-image: url(https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/playlists/playlist_398/reconnect_with_nature.jpg?);
             color: #fff;
-            text-decoration: none;
-            font-family: sans-serif;
+            background-position: center;
+            background-size: cover;
+            width: 400px;
+            height: 250px;
+            /* border: 5px solid black; */
+            border-bottom-color: red;
+            border-left-color: yellow;
+            border-right-color: green;
+            border-top-color: blue;
+            border-style: solid;
+            border-width: 10px;
+            border-bottom-width: 50px;
+            padding: 15px;
+            margin: 20px;
+            
+        }
+
+        .section-two {
+            background: cyan;
+            width: 200px;
+            height: 150px;
+            border: 5px solid black;
+            padding: 15px;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-   <header id="heading">
-       <div>
-           <h1 class="h1">
-               <a href="#">Netflix</a>
-           </h2>
-           <h1 class="h1">
-            <a href="#">Netflix</a>
-       </div>
-    </h1>
-   </header>
+    <section class="section-one">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto atque ut laboriosam ipsa exercitationem vero. Necessitatibus esse pariatur culpa ducimus ratione maiores error, enim distinctio aspernatur, laudantium qui sunt incidunt?
+    </section>
+    <section class="section-two">
+        2
+    </section>
 </body>
 </html>
