@@ -11,20 +11,39 @@
             padding: 0;
             font-family: sans-serif;
         }
+
+        label {
+            cursor: pointer;
+            /* display: block; */
+        }
     </style>
 </head>
 <body>
     <form action="#" method="get" target="_blank" autocomplete="off">
-        <section>
-            <h1>Cabeça</h1>
-            <p>O formulario</p>
-            <fieldset>
-                <legend>Descrição</legend>
-                <p>
-                    <input type="text">
-                </p>
-            </fieldset>
-        </section>
+        <p>O meu formulário</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+        </p>
+        <p>
+            <label for="dev">Sou um dev</label>
+            <input type="checkbox" id="dev" name="dev" value="sim"><br>
+            <label for="dev2">Sou um dev2</label>
+            <input type="checkbox" id="dev2" name="dev2" value="sim"><br>
+            <label for="dev3">Sou um dev3</label>
+            <input type="checkbox" id="dev3" name="dev3" value="sim">
+        </p>
+        <p>
+            Gêneros: <br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino"><br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino"><br>
+            <label for="outro_outra">Outro ou Outras</label>
+            <input type="radio" id="outro_outra" name="genero" value="outro_outra">
+        </p>
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
